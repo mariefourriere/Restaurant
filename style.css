@@ -1,5 +1,6 @@
 body {
-    /*Ne touchez pas sans prévenir*/
+    height: 100vh;
+    margin:0;
 }
 
 main {
@@ -49,10 +50,11 @@ footer > div > div > p:last-child {
     margin-top: 15px;
     padding: 0px;
     font-style: italic;
+}
 
 /* header */
 
-.nav{
+.nav {
     background-color: rgb(7, 7, 20);
 }
 
