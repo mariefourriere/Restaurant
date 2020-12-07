@@ -81,7 +81,7 @@ const collection = [{
 
     {
         title: "Mozzarella Tomate",
-        category: ["Dessert"],
+        category: ["Plat"],
         category2: ["Vegetarien"],
         img: "./assets/images/plat_10.png",
         description: "De simple mozzarella, mais accompagné de délicieuse rondelle de tomate.",
