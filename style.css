@@ -14,7 +14,6 @@ footer {
     /*Ne touchez pas sans prévenir*/
 }
 
-
 .margin {
     margin: 14px;
     /* padding: 0px; */
@@ -50,5 +49,24 @@ footer > div > div > p:last-child {
     margin-top: 15px;
     padding: 0px;
     font-style: italic;
+
+/* header */
+
+.nav{
+    background-color: rgb(7, 7, 20);
+}
+
+.logoTitle {
+    
+}
+.hero{
+    background-image: url(./assets/images/hero.png);
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 20px;
+    
+}
+.heroTitle{
+    color: white;
 }
 
