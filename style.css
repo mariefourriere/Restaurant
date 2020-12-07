@@ -23,3 +23,12 @@ footer {
 /* .tableWidth {
     width:400px;
 } */
+
+.recapDiv {
+    height: 100%;
+    width: 30%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
