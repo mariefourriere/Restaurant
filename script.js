@@ -1,90 +1,90 @@
 const collection = [{
     title: "Poulet rôti",
     category: ["Plat"],
-    category2: ["category2"],
+    category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_1.png",  
     description: "Ce poulet roti est incryable. retrouvez-y du piment et du poulet.",
     Prix:"Ajoutez moi pour: 12€"
 },
 
 {
-    title: "Coulant au chocolat",
+    title: "Tiramisu",
     category: ["Dessert"],
-    category2: ["category2"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_2.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Pour réchauffer les coeurs un bon Tiramisu.",
     Prix:"Ajoutez moi pour: 15€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Gyoza aux poireaux",
+    category: ["Plat"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_3.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "De bons poireaux c'est tout ce qu'il vous faut",
     Prix:"Ajoutez moi pour: 14€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Steak de légumes",
+    category: ["Plat"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_4.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Plat 100% maison dans un petit jardin privatif.",
     Prix:"Ajoutez moi pour: 18€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Moscow Mule",
+    category: ["Boisson"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_5.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Cocktail à base de vodka, de bière de gingembre épicée et du citron vert.",
     Prix:"Ajoutez moi pour: 17€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Steak frite",
+    category: ["Plat"],
+    category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_6.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "De bonnes frites et de la bonne viande.",
     Prix:"Ajoutez moi pour: 20€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Cocktail",
+    category: ["Boisson"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_7.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Un cocktail rafraîchissant pour l'été pour vôtre plus grand plaisir.",
     Prix:"Ajoutez moi pour: 9€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Poisson drésser",
+    category: ["Plat"],
+    category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_8.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Fillet de poisson accompagné de pomme de terre et de la salade.",
     Prix:"Ajoutez moi pour: 11€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Glace",
+    category: ["Dessert"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_9.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "Délicieuse glace mangue framboise.",
     Prix:"Ajoutez moi pour: 14€"
 },
 
 {
-    title: "Coulant au chocolat",
-    category: ["category"],
-    category2: ["category2"],
+    title: "Mozzarella Tomate",
+    category: ["Dessert"],
+    category2: ["Vegetarien"],
     img: "./assets/images/plat_10.png",  
-    description: "Une recette simple et efficace pour tous les fans de chocolat.",
+    description: "De simple mozzarella, mais accompagné de délicieuse rondelle de tomate.",
     Prix:"Ajoutez moi pour: 16€"
 },
 ];
