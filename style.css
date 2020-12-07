@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     margin:0;
+    
 }
 
 main {
@@ -20,9 +21,29 @@ footer {
     /* padding: 0px; */
 }
 
-/* .tableWidth {
-    width:400px;
-} */
+/* header */
+
+.ourNav {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+.ourNavItem:hover >*{
+    background-color: rgb(58, 58, 58) ;
+    
+}
+
+
+.hero{
+    background-image: url(./assets/images/hero.png);
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 20px;
+    
+}
+.heroTitle{
+    color: white;
+}
 
 .recapDiv {
     height: 100vh;
@@ -74,24 +95,4 @@ footer > div > div > p:last-child {
     margin-top: 15px;
     padding: 0px;
     font-style: italic;
-}
-
-/* header */
-
-.nav {
-    background-color: rgb(7, 7, 20);
-}
-
-.logoTitle {
-    
-}
-.hero{
-    background-image: url(./assets/images/hero.png);
-    background-size: cover;
-    height: 300px;
-    margin-bottom: 20px;
-    
-}
-.heroTitle{
-    color: white;
 }
