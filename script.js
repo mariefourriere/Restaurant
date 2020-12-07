@@ -1,13 +1,12 @@
 
-let myBasketButton = document.querySelector("body > header > nav > div.nav-right.nav-menu > span > a");
-
+let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > a")
 let main = document.querySelector('main')
 
 let clicked = true;
 let recapDiv = document.createElement("div");
 recapDiv.textContent="You can find the recap of your order below:"
 
-main.appendChild(recapDiv);
+document.body.appendChild(recapDiv);
 recapDiv.classList.add("recapDiv");
 
 const recapOrder = (e) => {

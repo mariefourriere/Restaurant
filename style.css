@@ -45,6 +45,16 @@ footer {
     color: white;
 }
 
+.opening{
+    background-image: url("./assets/images/section2.png");
+    background-size: cover;
+    height: 700px;
+}
+
+.tablebg{
+    background-color: transparent;
+}
+
 .recapDiv {
     height: 100vh;
     width: 30%;
