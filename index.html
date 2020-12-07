@@ -5,33 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Au trois-quart</title>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
-<body class="container">
+<body>
 
     <header>
-        <nav class="nav">
+        <nav class="nav is-flex is-justify-content-space-between">
             <div class="nav-left">
-                <a class="nav-item">
-                    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+                <a class="nav-item ">
+                    <figure class="image is-64x64">
+                    <img src="./assets/images/logo2.png" alt="Bulma logo">
+                    </figure>
                 </a>
-            </div>
-
-            <div class="nav-center">
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-facebook"></i>
-                    </span>
-                </a>
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-instagram"></i>
-                    </span>
-                </a>
+                
             </div>
 
             <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
@@ -56,7 +47,7 @@
                 </a>
 
                 <span class="nav-item">
-                    <a class="button is-primary">
+                    <a class="button is-light is-link">
                         <span class="icon">
                             <i class="fa fa-shopping-basket"></i>
                         </span>
@@ -68,18 +59,28 @@
         <section class="hero">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">
-                        Hero title
+                    <h1 class="title heroTitle">
+                        Welcome to Au trois-quart 
                     </h1>
-                    <h2 class="subtitle">
-                        Hero subtitle
-                    </h2>
+                    
                 </div>
             </div>
         </section>
     </header>
 
     <main>
+        <body>
+          <section class="section">
+            <div class="container">
+              <div class="heading">
+                <h2 class="title">About US</h2>
+                <p class="mt-5">
+                  At "Au trois quart", we garantee healthy, local & delightful meals. We invite you to share an amazing experience with us. During this current global situation, we are happy to offer you a free and fast delivery service, straight to your front door. To avoid any plastic waste, we encourage you to prepare your own cutlery and plates. We hope you will enjoy our work as much as we do. 
+                </p>
+              </div>
+            </div>
+          </section>
+        </body>
         <section class="contact">
             <table class="table">
                 <thead>
@@ -123,7 +124,7 @@
                     <tr>
                         <th>Sunday</th>
                         <td>11:30 - 14:00 </br>
-                            18:00 - 22:30</td>
+                            <strong>CLOSED</strong></td>
                     </tr>
                 </tbody>
             </table>
@@ -133,15 +134,22 @@
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <p>
-                    <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                </p>
-                <p>
-                    <a class="icon" href="https://github.com/jgthms/bulma">
-                        <i class="fa fa-github"></i>
+                <p class="p-footer">
+                    <a>
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    <a>
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </p>
+                <p class="p-footer">
+                    <strong>© 2020 Trois-quart</strong>
+                </p>
+                <p class="p-footer">
+                    The "Trois-quart" team members are <a href="https://github.com/JeanFabry">Jean F.</a>, <a href="https://github.com/mariefourriere">Marie F.</a> , <a href="https://github.com/GAudrey">Audrey G.</a> and <a href="https://github.com/Jniouen-Wassim">Wassin J.</a>
+                </p>
+                <p class="p-footer">
+                    <a href="https://github.com/JeanFabry/Restaurant"><i class="fa fa-github"></i> Github project</a>
                 </p>
             </div>
         </div>
@@ -149,5 +157,4 @@
 
     <script src="./script.js"></script>
 </body>
-
 </html>
