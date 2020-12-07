@@ -1,6 +1,15 @@
+/* *:not(path):not(g) {
+	color:                    hsla(210, 100%, 100%, 0.9) !important;
+	background:               hsla(210, 100%,  50%, 0.5) !important;
+	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+	box-shadow: none !important;
+} */
+
 body {
     height: 100vh;
     margin:0;
+    
 }
 
 main {
@@ -54,17 +63,21 @@ footer > div > div > p:last-child {
 
 /* header */
 
-.nav {
-    background-color: rgb(7, 7, 20);
-}
-
-.logoTitle {
+.ourNav {
+    padding-left: 50px;
+    padding-right: 50px;
     
 }
+.ourNavItem:hover >*{
+    background-color: rgb(58, 58, 58) ;
+    
+}
+
+
 .hero{
     background-image: url(./assets/images/hero.png);
     background-size: cover;
-    height: 300px;
+    height: 400px;
     margin-bottom: 20px;
     
 }

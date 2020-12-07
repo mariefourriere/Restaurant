@@ -15,121 +15,134 @@
 <body>
 
     <header>
-        <nav class="nav is-flex is-justify-content-space-between">
-            <div class="nav-left">
-                <a class="nav-item ">
-                    <figure class="image is-64x64">
-                    <img src="./assets/images/logo2.png" alt="Bulma logo">
-                    </figure>
+        <nav class="navbar is-fixed-top is-black
+        ourNav" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./assets/images/logo2.png" width="40" height="150">
                 </a>
-                
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
 
-            <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-            <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-            <span class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-
-            <!-- This "nav-menu" is hidden on mobile -->
-            <!-- Add the modifier "is-active" to display it on mobile -->
-            <div class="nav-right nav-menu">
-                <a class="nav-item">
-                    Home
-                </a>
-                <a class="nav-item">
-                    Menu
-                </a>
-                <a class="nav-item">
-                    Contact
-                </a>
-
-                <span class="nav-item">
-                    <a class="button is-light is-link">
-                        <span class="icon">
-                            <i class="fa fa-shopping-basket"></i>
-                        </span>
-                        <span>My Basket</span>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        AU TROIS-QUART
                     </a>
-                </span>
+                </div>
+                <div class="navbar-end ourNavItem">
+                    <a class="navbar-item" href="#welcome">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="menu.html">
+                        Menu
+                    </a>
+
+                    <a class="navbar-item" href="#hours">
+                        Opening Hours
+                    </a>
+
+                    <a class="navbar-item" href="#about">
+                        About Us
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-dark">
+                                <strong>My basket</strong>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <section class="hero">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title heroTitle">
-                        Welcome to Au trois-quart 
+                    <h1 class="title has-text-centered heroTitle pt-6" id="welcome">
+                        Welcome to our restaurant
                     </h1>
-                    
+
                 </div>
             </div>
         </section>
     </header>
 
-    <main>
-        <body>
-          <section class="section">
-            <div class="container">
-              <div class="heading">
-                <h2 class="title">About US</h2>
+
+
+    <section class="section has-background-light ">
+        <div class="container column is-three-fifths
+        is-offset-one-fifth">
+            <div class="heading">
+                <h2 class="title" id="about">About US</h2>
                 <p class="mt-5">
-                  At "Au trois quart", we garantee healthy, local & delightful meals. We invite you to share an amazing experience with us. During this current global situation, we are happy to offer you a free and fast delivery service, straight to your front door. To avoid any plastic waste, we encourage you to prepare your own cutlery and plates. We hope you will enjoy our work as much as we do. 
+                    At "Au trois quart", we garantee healthy, local & delightful meals. We invite you to share an amazing experience with us. During this current global situation, we are happy to offer you a free and fast delivery service, straight to your front door. To avoid any plastic waste, we encourage you to prepare your own cutlery and plates. We hope you will enjoy our work as much as we do.
                 </p>
-              </div>
             </div>
-          </section>
-        </body>
-        <section class="contact">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th><abbr title="Position">Day</abbr></th>
-                        <th>Opening time</th>
+        </div>
+    </section>
 
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Monday</th>
-                        <td><strong>CLOSED</strong></td>
-                    </tr>
-                    <tr>
-                        <th>Tuesday</th>
-                        <td>11:30 - 14:00 </br>
-                            18:00 - 22:30 </td>
-                    </tr>
-                    <tr>
-                        <th>Wednesday</th>
-                        <td>11:30 - 14:00 </br>
-                            18:00 - 22:30</td>
-                    </tr>
-                    <tr>
-                        <th>Thursday</th>
-                        <td>11:30 - 14:00 </br>
-                            18:00 - 22:30</td>
+    <section class="contact is-flex is-justify-content-center">
+        <div>
+        <h2 class="title mt-6" id="hours">Our opening hours</h2>
+        <table class="table mt-6">
+            <thead>
+                <tr>
+                    <th><abbr title="Position">Day</abbr></th>
+                    <th>Opening time</th>
 
-                    </tr>
-                    <tr>
-                        <th>Friday</th>
-                        <td>11:30 - 14:00 </br>
-                            18:00 - 22:30</td>
-                    </tr>
-                    <tr>
-                        <th>Saturday</th>
-                        <td>11:30 - 14:00 </br>
-                            18:00 - 22:30</td>
-                    </tr>
-                    <tr>
-                        <th>Sunday</th>
-                        <td>11:30 - 14:00 </br>
-                            <strong>CLOSED</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td><strong>CLOSED</strong></td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>11:30 - 14:00 </br>
+                        18:00 - 22:30 </td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>11:30 - 14:00 </br>
+                        18:00 - 22:30</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>11:30 - 14:00 </br>
+                        18:00 - 22:30</td>
+
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>11:30 - 14:00 </br>
+                        18:00 - 22:30</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>11:30 - 14:00 </br>
+                        18:00 - 22:30</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td>11:30 - 14:00 </br>
+                        <strong>CLOSED</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </section>
+
 
     <footer class="footer">
         <div class="container">
