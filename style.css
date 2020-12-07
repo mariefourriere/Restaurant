@@ -1,5 +1,6 @@
 body {
-    /*Ne touchez pas sans prévenir*/
+    height: 100vh;
+    margin:0;
 }
 
 main {
