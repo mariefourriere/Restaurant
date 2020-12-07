@@ -14,11 +14,41 @@ footer {
     /*Ne touchez pas sans prévenir*/
 }
 
-
 .margin {
     margin: 14px;
     /* padding: 0px; */
 }
+
+/* modif css audrey */
+.p-footer {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer > div > div > p:first-child{
+    display: block;
+    padding: 0px;
+}
+
+footer > div > div > p:first-child > a{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+footer > div > div > p:nth-child(2) {
+    border-right: 1px solid black;
+    padding-left: 0px;
+}
+
+footer > div > div > p:last-child {
+    display: block;
+    margin-top: 15px;
+    padding: 0px;
+    font-style: italic;
 
 /* header */
 
