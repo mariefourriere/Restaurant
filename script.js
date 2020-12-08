@@ -81,8 +81,15 @@ let thArr = [];
 
 for(let elem of thTable){
     if(elem.innerText == nowDayLetters){
-        thArr.push(elem.innerText);
-        elem.parentElement.style.backgroundColor = 'green';
+        if(openings.textContent == `We're opened.`)
+        {
+            thArr.push(elem.innerText);
+            elem.parentElement.style.backgroundColor = 'green';
+        }
+        else{
+            thArr.push(elem.innerText);
+            elem.parentElement.style.backgroundColor = 'red';
+        }
     }
 }
 // -----------------------------------------------END HOURS
