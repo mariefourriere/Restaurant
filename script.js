@@ -1,5 +1,5 @@
 
-let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > a")
+let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > button")
 let main = document.querySelector('main')
 
 let clicked = true;
