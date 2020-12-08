@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     margin:0;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -44,15 +44,31 @@ footer {
 .heroTitle{
     color: white;
 }
+.happyHoliday{
+    color: rgb(145, 6, 6);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about{
+    background-color: lightgrey;
+
+}
 
 .opening{
-    background-image: url("./assets/images/section2.png");
+    background-image: url("./assets/images/morning.JPG");
+    position: relative;
     background-size: cover;
     height: 700px;
 }
 
+
+
 .tablebg{
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.356);
+    color: black;
+    font-weight: 700;
+
 }
 
 .recapDiv {
