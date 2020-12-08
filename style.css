@@ -122,3 +122,56 @@ footer > div > div > p:last-child {
     padding: 0px;
     font-style: italic;
 }
+
+
+/*================== Début Card (Jniouen wassim) =================*/
+
+.image.is-4by3 {
+    border: 1px solid black;
+}
+
+.tag.is-danger {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.content h2 {
+    color: #0c0b0b;
+}
+
+.content p {
+    color: black;
+}
+
+.button {
+    border: 2px solid black;
+    color: white;
+    background-color: rgb(226, 43, 43);
+}
+
+.card {
+    color: black;
+    /* background-color: rgb(90, 84, 84); */
+    /* filter: brightness(80%); */
+    border: 1px solid black;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+    opacity: 0.9;
+    color: white;
+}
+
+.card:hover {
+
+    filter: brightness(97%);
+    box-shadow: 0 0 0 0 rgb(226, 43, 43);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.01);
+    }
+}
+
+/*================= Fin Card (Jniouen wassim) =================*/
