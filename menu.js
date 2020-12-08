@@ -199,7 +199,7 @@ for (let element of collection) {
 
   const cardPrix = document.createElement("a");
   cardPrix.className = "button";
-  cardPrix.textContent = "Ajoutez moi pour: " + element.Prix;
+  cardPrix.textContent = "Ajoutez moi: " + element.Prix;
   cardAllText.appendChild(cardPrix);
 
   //============================== Function ADD TO CART =================================//
@@ -304,7 +304,7 @@ function filterPlat(information) {
 
       const cardPrix = document.createElement("a");
       cardPrix.className = "button";
-      cardPrix.textContent = element.Prix;
+      cardPrix.textContent = "Ajoutez moi: " + element.Prix;
       cardAllText.appendChild(cardPrix);
     }
 }
