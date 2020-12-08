@@ -1,89 +1,104 @@
+
+
+<!-- //----------------------------- (Jniouen wassim) ------------------------------------// -->
+    <main>
+        
+    </main>
+<!-- //----------------------------- (Jniouen wassim) ------------------------------------// -->
+
+    
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aux 3 petits cochons</title>
+    <title>Au trois-quart</title>
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
     <link rel="stylesheet" href="./style.css" />
 
 </head>
 
-<body class="container">
+<body>
 
     <header>
-        <nav class="nav">
-            <div class="nav-left">
-                <a class="nav-item">
-                    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+        <nav class="navbar is-fixed-top is-black
+        ourNav" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./assets/images/logo2.png" width="40" height="150">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div class="nav-center">
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-facebook"></i>
-                    </span>
-                </a>
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-instagram"></i>
-                    </span>
-                </a>
-            </div>
-
-            <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-            <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-            <span class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-
-            <!-- This "nav-menu" is hidden on mobile -->
-            <!-- Add the modifier "is-active" to display it on mobile -->
-            <div class="nav-right nav-menu">
-                <a class="nav-item">
-                    Home
-                </a>
-                <a class="nav-item">
-                    Menu
-                </a>
-                <a class="nav-item">
-                    Contact
-                </a>
-
-                <span class="nav-item">
-                    <a class="button is-primary">
-                        <span class="icon">
-                            <i class="fa fa-shopping-basket"></i>
-                        </span>
-                        <span>My Basket</span>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        AU TROIS-QUART
                     </a>
-                </span>
+                </div>
+                <div class="navbar-end ourNavItem">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="menu.html">
+                        Menu
+                    </a>
+
+                    <a class="navbar-item" href="index.html/#hours">
+                        Opening Hours
+                    </a>
+
+                    <a class="navbar-item" href="#about">
+                        About Us
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-dark">
+                                <strong>My basket</strong>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
+
         <section class="hero">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">
-                        Hero title
+                    <h1 class="title has-text-centered heroTitle pt-6" id="welcome">
+                        Welcome to our restaurant. 
                     </h1>
-                    <h2 class="subtitle">
-                        Hero subtitle
-                    </h2>
+                    <h2 class="happyHoliday">Find our menu choices here.</h2>
+                    
+
                 </div>
             </div>
         </section>
     </header>
 
     <main>
-        <section class="research">
+      <section class="research">
             <div class="field has-addons">
-                <div class="control">
+                 <div id="recherche" class="control"><!-- Option recherche pour JS -->
                     <input class="input" type="text" placeholder="Find a repository">
                 </div>
                 <div class="control">
@@ -93,47 +108,38 @@
                 </div>
             </div>
         </section>
-        <section class="menu columns is-multiline">
-            <div class="card column is-one-quarter margin">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="./assets/images/plat 1.png" alt="Image">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <span class="tag is-success">
-                        Bar
-                        <!-- <button class="delete is-small"></button> -->
-                    </span>
-                    <span class="tag is-danger">
-                        helllloooo
-                        <!-- <button class="delete is-small"></button> -->
-                    </span>
 
-                    <div class="content">
-                        <h2>Poulet rôti</h2>
-                        Ce poulet roti est incryable. retrouvez-y du piment et du poulet.
-                        <div class="block">
-                            <a class="button">Ajoutez moi pour: </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- ========================= Début Card ========================= -->
+
+        <section class="menu columns is-multiline">
+            
         </section>
+
+         <!-- ========================= FIn Card  ========================= -->
+
+        <section id="collection_Filtrer" class="columns is-multiline"></section> 
+     
     </main>
 
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <p>
-                    <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                </p>
-                <p>
-                    <a class="icon" href="https://github.com/jgthms/bulma">
-                        <i class="fa fa-github"></i>
+                <p class="p-footer">
+                    <a>
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    <a>
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </p>
+                <p class="p-footer">
+                    <strong>© 2020 Trois-quart</strong>
+                </p>
+                <p class="p-footer">
+                    The "Trois-quart" team members are <a href="https://github.com/JeanFabry">Jean F.</a>, <a href="https://github.com/mariefourriere">Marie F.</a> , <a href="https://github.com/GAudrey">Audrey G.</a> and <a href="https://github.com/Jniouen-Wassim">Wassin J.</a>
+                </p>
+                <p class="p-footer">
+                    <a href="https://github.com/JeanFabry/Restaurant"><i class="fa fa-github"></i> Github project</a>
                 </p>
             </div>
         </div>
