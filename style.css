@@ -125,6 +125,10 @@ margin: 10px 10px;
     align-items: flex-start;
 padding-left: 10px;
  }
+
+ .innerRecapDivRightTitle{
+     text-align: left;
+ }
  
  .innerRecapImgLeft{
  height: 100px;

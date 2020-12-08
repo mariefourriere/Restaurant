@@ -1,7 +1,7 @@
 // Jean - Cart Div //
 
 let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > button")
-let totalOrder="0€";
+let totalOrder=0;
 let main = document.querySelector('main')
 
 let clicked = true;
@@ -17,7 +17,7 @@ recapDivOrdersEmpty.textContent = "Your Cart is currently empty !";
 recapDivOrders.appendChild(recapDivOrdersEmpty);
 
 let recapDivCartTotal= document.createElement("button");
-recapDivCartTotal.innerText="Order here for: "+totalOrder
+recapDivCartTotal.innerText="Order here for: "+totalOrder +"€"
 
 recapDiv.appendChild(recapDivTitle);
 recapDiv.appendChild(recapDivOrders);
@@ -49,7 +49,7 @@ const collection = [{
     category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_1.png",
     description: "Ce poulet roti est incryable. retrouvez-y du piment et du poulet.",
-    Prix: "12€"
+    Prix: 12
 },
 
 {
@@ -58,7 +58,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_2.png",
     description: "Pour réchauffer les coeurs un bon Tiramisu.",
-    Prix: "15€"
+    Prix: 15
 },
 
 {
@@ -67,7 +67,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_3.png",
     description: "De bons poireaux c'est tout ce qu'il vous faut",
-    Prix: "14€"
+    Prix: 14
 },
 
 {
@@ -76,7 +76,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_4.png",
     description: "Plat 100% maison dans un petit jardin privatif.",
-    Prix: "18€"
+    Prix: 18
 },
 
 {
@@ -85,7 +85,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_5.png",
     description: "Cocktail à base de vodka, de bière de gingembre épicée et du citron vert.",
-    Prix: "17€"
+    Prix: 17
 },
 
 {
@@ -94,7 +94,7 @@ const collection = [{
     category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_6.png",
     description: "De bonnes frites et de la bonne viande.",
-    Prix: "20€"
+    Prix: 20
 },
 
 {
@@ -103,16 +103,16 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_7.png",
     description: "Un cocktail rafraîchissant pour l'été pour vôtre plus grand plaisir.",
-    Prix: "9€"
+    Prix: 9
 },
 
 {
-    title: "Poisson drésser",
+    title: "Poisson dréssé",
     category: ["Plat"],
     category2: ["Non-Vegetarien"],
     img: "./assets/images/plat_8.png",
     description: "Fillet de poisson accompagné de pomme de terre et de la salade.",
-    Prix: "11€"
+    Prix: 11
 },
 
 {
@@ -121,7 +121,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_9.png",
     description: "Délicieuse glace mangue framboise.",
-    Prix: "14€"
+    Prix: 14
 },
 
 {
@@ -130,7 +130,7 @@ const collection = [{
     category2: ["Vegetarien"],
     img: "./assets/images/plat_10.png",
     description: "De simple mozzarella, mais accompagné de délicieuse rondelle de tomate.",
-    Prix: "16€"
+    Prix: 16
 },
 ];
 
@@ -199,7 +199,7 @@ for (let element of collection) {
 
   const cardPrix = document.createElement("a");
   cardPrix.className = "button";
-  cardPrix.textContent = "Ajoutez moi: " + element.Prix;
+  cardPrix.textContent = "Ajoutez moi: " + element.Prix +"€";
   cardAllText.appendChild(cardPrix);
 
   //============================== Function ADD TO CART =================================//
@@ -212,19 +212,24 @@ for (let element of collection) {
     const innerRecapDivRightTitle = document.createElement("h3");
     const innerRecapDivRightPrice = document.createElement("p");
 
+    innerRecapDivRightTitle.classList.add("innerRecapDivRightTitle");
     innerRecapDiv.classList.add("innerRecapDiv");
     innerRecapDivRight.classList.add("innerRecapDivRight");
     innerRecapImgLeft.classList.add("innerRecapImgLeft");
 
     innerRecapImgLeft.src = element.img;
     innerRecapDivRightTitle.textContent = element.title;
-    innerRecapDivRightPrice.textContent = element.Prix;
-
+    innerRecapDivRightPrice.textContent = element.Prix +"€";
+    totalOrder +=  element.Prix
+    recapDivCartTotal.innerText = "Order here for: " + totalOrder +"€";
     innerRecapDiv.appendChild(innerRecapImgLeft);
     innerRecapDiv.appendChild(innerRecapDivRight);
     innerRecapDivRight.appendChild(innerRecapDivRightTitle);
     innerRecapDivRight.appendChild(innerRecapDivRightPrice);
     recapDivOrders.appendChild(innerRecapDiv);
+
+
+
   };
 
   cardPrix.addEventListener("click", addingToCart);
