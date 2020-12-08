@@ -136,9 +136,18 @@ footer > div > div > p:last-child {
 
 /*================== Début Card (Jniouen wassim) =================*/
 
-.image.is-4by3 {
-    border: 1px solid black;
+#centerResearch{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
 }
+
+#centerCard, #collection_Filtrer{
+    justify-content: center;
+    color: red;
+}
+
 
 .tag.is-danger {
     margin-left: 10px;
@@ -153,28 +162,17 @@ footer > div > div > p:last-child {
     color: black;
 }
 
-.button {
-    border: 2px solid black;
-    color: white;
-    background-color: rgb(226, 43, 43);
-}
-
 .card {
     color: black;
-    /* background-color: rgb(90, 84, 84); */
-    /* filter: brightness(80%); */
-    border: 1px solid black;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
-    opacity: 0.9;
-    color: white;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border: 0.2px solid #D3D3D3;
+    filter: brightness(95%);
 }
 
 .card:hover {
-
-    filter: brightness(97%);
-    box-shadow: 0 0 0 0 rgb(226, 43, 43);
+    box-shadow: 0 0 0 0  #D3D3D3;
     animation: pulse 1.5s infinite;
 }
 
@@ -182,6 +180,32 @@ footer > div > div > p:last-child {
     to {
         box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.01);
     }
+}
+
+input.input{
+border: 0.2px solid rgb(145, 6, 6);
+}
+
+a.button.is-info{
+    border: 0.2px solid rgb(145, 6, 6);
+    background-color:  #D3D3D3;
+    color:black;
+    font-weight: bold;
+
+}
+a.button.is-info:hover{
+    background-color:#D3D3D3;
+    color:black
+}
+.button {
+    border: 0.1px solid #D3D3D3;
+    color: black;
+    
+}
+
+.button:hover{
+    filter: invert(0.20);
+   
 }
 
 /*================= Fin Card (Jniouen wassim) =================*/
