@@ -28,7 +28,7 @@ footer {
     padding-right: 50px;
     
 }
-.ourNavItem:hover >*{
+a.ourNavItem:hover {
     background-color: rgb(58, 58, 58) ;
     
 }
@@ -62,12 +62,22 @@ footer {
     height: 700px;
 }
 
+.titleSection{
+    color:  rgb(145, 6, 6);
+    background-color: rgba(255, 255, 255, 0.356);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    
+}
 
 
 .tablebg{
     background-color: rgba(255, 255, 255, 0.356);
     color: black;
     font-weight: 700;
+    width:100%;
 
 }
 
@@ -175,3 +185,4 @@ footer > div > div > p:last-child {
 }
 
 /*================= Fin Card (Jniouen wassim) =================*/
+
