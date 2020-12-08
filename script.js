@@ -164,19 +164,20 @@ function filterPlat(information) {
     const results = []
 
     for (let plat of collection) {
-        if (plat.title.toLowerCase().match(information))
-        { results.push(plat) }          
+        if (plat.title.toLowerCase().match(information)) {
+            results.push(plat)
+        }
     }
 
     const resultsDiv = document.querySelector('#collection_Filtrer') //pour envoyé la nouvel collection avec le filtre dans une nouvel 'div' ligne(129 HTML)
     resultsDiv.innerHTML = ''
     SectionColonne.innerHTML = ' '
 
-    for (let element of results /*option recherche*/) {
+    for (let element of results /*option recherche*/ ) {
 
         const colonne = document.createElement('div');
         colonne.className = "card column is-one-quarter margin";
-        resultsDiv.appendChild(colonne);//option recherche
+        resultsDiv.appendChild(colonne); //option recherche
 
         //============================== IMAGE =================================//
 
@@ -238,7 +239,8 @@ function filterPlat(information) {
     }
 }
 
-    document.querySelector('#recherche')//option recherche
-    .addEventListener('keyup', input => {/* sélection des valeurs(keyup) entrer dans la barre de recherche(input) */
-    filterPlat(input.target.value.toLowerCase())
+document.querySelector('#recherche') //option recherche
+    .addEventListener('keyup', input => {
+        /* sélection des valeurs(keyup) entrer dans la barre de recherche(input) */
+        filterPlat(input.target.value.toLowerCase())
     })
