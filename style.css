@@ -29,11 +29,15 @@ footer {
     
 }
 a.ourNavItem:hover {
-    background-color: rgb(58, 58, 58) ;
+    background-color: grey;
     
 }
+/* Marie  */
+.toggleSize{
+    background-color:none;
+}
 
-
+/* Marie  */
 .hero{
     background-image: url(./assets/images/hero.png);
     background-size: cover;
