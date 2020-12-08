@@ -84,7 +84,7 @@ a.ourNavItem:hover {
 .recapDiv {
     height: 100vh;
     width: 30%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -30%; 
     margin: 63px 0;
