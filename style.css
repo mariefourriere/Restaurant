@@ -14,12 +14,10 @@ footer {
     /*Ne touchez pas sans prévenir*/
 }
 
-
 .margin {
     margin: 14px;
     /* padding: 0px; */
 }
-
 
 /*================== Début Card (Jniouen wassim) =================*/
 
@@ -72,5 +70,9 @@ footer {
     }
 }
 
+/* .newCard{
+display: flex;
+flex-direction: column;
 
+} */
 /*================== Fin Card (Jniouen wassim) =================*/

@@ -155,10 +155,90 @@ for (let element of collection) {
     cardPrix.className = "button";
     cardPrix.textContent = element.Prix;
     cardAllText.appendChild(cardPrix);
-    //ok  
-
-
-
 
 }
 /////////////////////////////  Fin Card   ////////////////////////////////////////////////////
+//////////////////////////// Option de recherche //////////////////////////////////////////
+
+function filterPlat(information) {
+    const results = []
+
+    for (let plat of collection) {
+        if (plat.title.toLowerCase().match(information))
+        { results.push(plat) }          
+    }
+
+    const resultsDiv = document.querySelector('#collection_Filtrer') //pour envoyé la nouvel collection avec le filtre dans une nouvel 'div' ligne(129 HTML)
+    resultsDiv.innerHTML = ''
+    SectionColonne.innerHTML = ' '
+
+    for (let element of results /*option recherche*/) {
+
+        const colonne = document.createElement('div');
+        colonne.className = "card column is-one-quarter margin";
+        resultsDiv.appendChild(colonne);//option recherche
+
+        //============================== IMAGE =================================//
+
+        const cardImg = document.createElement('div');
+        cardImg.className = "card-image";
+        colonne.appendChild(cardImg);
+
+        const cardfig = document.createElement('figure');
+        cardfig.className = "image is-4by3";
+        cardImg.appendChild(cardfig);
+
+        const image = document.createElement('img');
+        image.src = element.img;
+        cardfig.appendChild(image);
+
+        //============================== TAG =================================//
+
+        const cardCont = document.createElement('div');
+        cardCont.className = "card-content";
+        colonne.appendChild(cardCont);
+
+        const tag = document.createElement('span');
+        tag.className = "tag is-success";
+        tag.textContent = element.category;
+        cardCont.appendChild(tag);
+
+        const tag2 = document.createElement('span');
+        tag2.className = "tag is-danger";
+        tag2.textContent = element.category2;
+        cardCont.appendChild(tag2);
+
+        //==================================== TITRE + Texte =====================================//
+
+        const cardAllText = document.createElement('div');
+        cardAllText.className = "content";
+        cardCont.appendChild(cardAllText);
+
+        const cardTitre = document.createElement('h2');
+        cardTitre.className = "content";
+        cardTitre.textContent = element.title;
+        cardAllText.appendChild(cardTitre);
+
+        const cardText = document.createElement('p');
+        cardText.className = "content";
+        cardText.textContent = element.description;
+        cardAllText.appendChild(cardText);
+
+        //============================== PRIX =================================//
+
+        const cardAllPrix = document.createElement('div');
+        cardAllPrix.className = "block";
+        cardAllText.appendChild(cardAllPrix);
+
+        const cardPrix = document.createElement('a');
+        cardPrix.className = "button";
+        cardPrix.textContent = element.Prix;
+        cardAllText.appendChild(cardPrix);
+
+    }
+}
+
+    document.querySelector('#recherche')//option recherche
+    .addEventListener('keyup', input => {/* sélection des valeurs(keyup) entrer dans la barre de recherche(input) */
+    filterPlat(input.target.value.toLowerCase())
+    })
