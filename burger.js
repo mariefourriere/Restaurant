@@ -1,4 +1,5 @@
 //Marie - Audrey Burger Menu
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements

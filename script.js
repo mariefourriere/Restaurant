@@ -80,11 +80,11 @@ for(let elem of thTable){
         if(openings.textContent == `We're opened.`)
         {
             thArr.push(elem.innerText);
-            elem.parentElement.style.backgroundColor = 'green';
+            elem.parentElement.className = 'opened';
         }
         else{
             thArr.push(elem.innerText);
-            elem.parentElement.style.backgroundColor = 'red';
+            elem.parentElement.className = 'closed';
         }
     }
 }

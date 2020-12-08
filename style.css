@@ -190,3 +190,11 @@ footer > div > div > p:last-child {
 
 /*================= Fin Card (Jniouen wassim) =================*/
 
+/* --- opening hours color ---*/
+.opened{
+    background-color: rgba(26, 116, 23, 0.61);
+}
+
+.closed{
+    background-color: rgba(175, 86, 35, 0.61);
+}
