@@ -5,144 +5,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Au trois-quart</title>
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
     <link rel="stylesheet" href="./style.css">
 
 </head>
 
-<body class="container">
+<body>
 
     <header>
-        <nav class="nav">
-            <div class="nav-left">
-                <a class="nav-item">
-                    <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+        <nav class="navbar is-fixed-top is-black
+        ourNav" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="./assets/images/logo3.png" width="40" height="150">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div class="nav-center">
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-facebook"></i>
-                    </span>
-                </a>
-                <a class="nav-item">
-                    <span class="icon">
-                        <i class="fa fa-instagram"></i>
-                    </span>
-                </a>
-            </div>
-
-            <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-            <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-            <span class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
-
-            <!-- This "nav-menu" is hidden on mobile -->
-            <!-- Add the modifier "is-active" to display it on mobile -->
-            <div class="nav-right nav-menu">
-                <a class="nav-item">
-                    Home
-                </a>
-                <a class="nav-item">
-                    Menu
-                </a>
-                <a class="nav-item">
-                    Contact
-                </a>
-
-                <span class="nav-item">
-                    <a class="button is-primary">
-                        <span class="icon">
-                            <i class="fa fa-shopping-basket"></i>
-                        </span>
-                        <span>My Basket</span>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">
+                        AU TROIS-QUART
                     </a>
-                </span>
+                </div>
+                <div class="navbar-end ourNavItem">
+                    <a class="navbar-item" href="#welcome">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="menu.html">
+                        Menu
+                    </a>
+
+                    <a class="navbar-item" href="#hours">
+                        Opening Hours
+                    </a>
+
+                    <a class="navbar-item" href="#about">
+                        About Us
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <button class="button is-dark">
+                                <span class="icon">
+                                  <i class="fa fa-shopping-basket"></i>
+                                </span>
+                            <strong>My basket</strong>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
         <section class="hero">
             <div class="hero-body">
                 <div class="container">
-                    <h1 class="title">
-                        Hero title
+                    <h1 class="title has-text-centered heroTitle pt-6" id="welcome">
+                        Welcome to our restaurant
                     </h1>
-                    <h2 class="subtitle">
-                        Hero subtitle
-                    </h2>
+                    <h2 class="happyHoliday">We wish you a happy holiday season.</h2>
+
                 </div>
             </div>
         </section>
     </header>
 
-    <main>
-        <section class="contact">
-            <table class="table">
+
+
+    <section class="section columns about">
+        <div class="container column is-half is-offset-one-quarter ">
+            <div class="heading">
+                <h2 class="title " id="about">About US</h2>
+                <p class="mt-5">
+                    At "Au trois quart", we garantee healthy, local & delightful meals. We invite you to share an amazing experience with us. During this current global situation, we are happy to offer you a free and fast delivery service, straight to your front door. To avoid any plastic waste, we encourage you to prepare your own cutlery and plates. We hope you will enjoy our work as much as we do.
+                </p>
+            </div>
+        </div>
+        <div class="column ">
+            <img src="./assets/images/logo3.png" alt="our logo">
+        </div>
+    </section>
+
+    <section class="contact is-flex is-justify-content-center transparent opening ">
+        <div>
+            <h2 class="title mt-6" id="hours">Our opening hours</h2>
+            <table class="table mt-6 tablebg">
                 <thead>
                     <tr>
-                        <th><abbr title="Position">Pos</abbr></th>
-                        <th>Team</th>
+                        <th><abbr title="Position">Day</abbr></th>
+                        <th>Opening time</th>
 
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>1</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C."
-                                title="Leicester City F.C.">Leicester City</a> <strong>(C)</strong>
-                        </td>
+                        <th>Monday</th>
+                        <td><strong>CLOSED</strong></td>
                     </tr>
                     <tr>
-                        <th>2</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a></td>
+                        <th>Tuesday</th>
+                        <td>11:30 - 14:00 </br>
+                            18:00 - 22:30 </td>
                     </tr>
                     <tr>
-                        <th>3</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C."
-                                title="Tottenham Hotspur F.C.">Tottenham Hotspur</a></td>
+                        <th>Wednesday</th>
+                        <td>11:30 - 14:00 </br>
+                            18:00 - 22:30</td>
                     </tr>
                     <tr>
-                        <th>4</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C."
-                                title="Manchester City F.C.">Manchester City</a></td>
+                        <th>Thursday</th>
+                        <td>11:30 - 14:00 </br>
+                            18:00 - 22:30</td>
 
                     </tr>
                     <tr>
-                        <th>5</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C."
-                                title="Manchester United F.C.">Manchester United</a></td>
+                        <th>Friday</th>
+                        <td>11:30 - 14:00 </br>
+                            18:00 - 22:30</td>
                     </tr>
                     <tr>
-                        <th>6</th>
-                        <td><a href="https://en.wikipedia.org/wiki/Southampton_F.C."
-                                title="Southampton F.C.">Southampton</a></td>
+                        <th>Saturday</th>
+                        <td>11:30 - 14:00 </br>
+                            18:00 - 22:30</td>
                     </tr>
                     <tr>
-                        <th>7</th>
-                        <td><a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C."
-                                title="West Ham United F.C.">West Ham United</a></td>
+                        <th>Sunday</th>
+                        <td>11:30 - 14:00 </br>
+                            <strong>CLOSED</strong></td>
                     </tr>
                 </tbody>
             </table>
-        </section>
-    </main>
+        </div>
+    </section>
+
 
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
-                <p>
-                    <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-                    <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                    is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                </p>
-                <p>
-                    <a class="icon" href="https://github.com/jgthms/bulma">
-                        <i class="fa fa-github"></i>
+                <p class="p-footer">
+                    <a>
+                        <i class="fa fa-facebook"></i>
                     </a>
+                    <a>
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </p>
+                <p class="p-footer">
+                    <strong>© 2020 Trois-quart</strong>
+                </p>
+                <p class="p-footer">
+                    The "Trois-quart" team members are <a href="https://github.com/JeanFabry">Jean F.</a>, <a href="https://github.com/mariefourriere">Marie F.</a> , <a href="https://github.com/GAudrey">Audrey G.</a> and <a href="https://github.com/Jniouen-Wassim">Wassin J.</a>
+                </p>
+                <p class="p-footer">
+                    <a href="https://github.com/JeanFabry/Restaurant"><i class="fa fa-github"></i> Github project</a>
                 </p>
             </div>
         </div>
