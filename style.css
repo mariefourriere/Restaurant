@@ -29,11 +29,15 @@ footer {
     
 }
 a.ourNavItem:hover {
-    background-color: rgb(58, 58, 58) ;
+    background-color: grey;
     
 }
+/* Marie  */
+.toggleSize{
+    background-color:none;
+}
 
-
+/* Marie  */
 .hero{
     background-image: url(./assets/images/hero.png);
     background-size: cover;
@@ -121,6 +125,10 @@ margin: 10px 10px;
     align-items: flex-start;
 padding-left: 10px;
  }
+
+ .innerRecapDivRightTitle{
+     text-align: left;
+ }
  
  .innerRecapImgLeft{
  height: 100px;
@@ -170,15 +178,44 @@ footer > div > div > p:last-child {
 
 /*================== Début Card (Jniouen wassim) =================*/
 
-.image.is-4by3 {
-    border: 1px solid black;
+#centerResearch{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+
+#centerCard, #collection_Filtrer{
+    justify-content: center;
+    color: red;
+}
+.barreSelect{
+    display: flex;
+    justify-content: center;
+}
+
+.Select{
+    
+    background-color: royalblue;
 }
 
 .tag.is-danger {
     margin-left: 10px;
     margin-bottom: 5px;
 }
+.tag:not(body).is-success{
+    background-color:transparent;
+    color:#3d8354;
+    font-weight:bold;
+    border: 0.1px solid #3d8354;
+}
 
+.tag:not(body).is-danger{
+    background-color: transparent;
+    color: #3f1f1f;
+    font-weight:bold;
+    border: 0.1px solid #3f1f1f;
+}
 .content h2 {
     color: #0c0b0b;
 }
@@ -187,28 +224,17 @@ footer > div > div > p:last-child {
     color: black;
 }
 
-.button {
-    border: 2px solid black;
-    color: white;
-    background-color: rgb(226, 43, 43);
-}
-
 .card {
     color: black;
-    /* background-color: rgb(90, 84, 84); */
-    /* filter: brightness(80%); */
-    border: 1px solid black;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    border-bottom-left-radius: 3%;
-    opacity: 0.9;
-    color: white;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border: 0.2px solid #D3D3D3;
+    filter: brightness(95%);
 }
 
 .card:hover {
-
-    filter: brightness(97%);
-    box-shadow: 0 0 0 0 rgb(226, 43, 43);
+    box-shadow: 0 0 0 0  #D3D3D3;
     animation: pulse 1.5s infinite;
 }
 
@@ -218,4 +244,42 @@ footer > div > div > p:last-child {
     }
 }
 
+input.input{
+border: 0.2px solid #363636;
+
+}
+
+a.button.is-info{
+    border: 0.2px solid #363636;
+    background-color:  transparent;
+    color:black;
+    font-weight: bold;
+
+}
+a.button.is-info:hover{
+    background-color:#D3D3D3;
+    color:black
+}
+.button {
+    background-color:transparent;
+    border: 0.px solid black;
+    color: black;
+    font-weight: 550;
+    
+}
+
+.button:hover{
+    filter: invert(0.20);
+   
+}
+
 /*================= Fin Card (Jniouen wassim) =================*/
+
+/* --- opening hours color ---*/
+.opened{
+    background-color: rgba(26, 116, 23, 0.61);
+}
+
+.closed{
+    background-color: rgba(175, 86, 35, 0.61);
+}
