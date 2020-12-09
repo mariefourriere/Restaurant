@@ -32,16 +32,70 @@ a.ourNavItem:hover {
     background-color: grey;
     
 }
-/* Marie  */
-.toggleSize{
-    background-color:none;
+/* Marie ---cart--------------------  */
+ 
+a.ourNavItem:hover {
+    background-color:transparent;
+    color: rgb(145, 6, 6);
+    
+}
+.mySlides{
+display: none;
+margin-bottom: 18px;
 }
 
-/* Marie  */
-.hero{
-    background-image: url(./assets/images/hero.png);
+.cart{
+    display: flex;
+    
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+}
+.slideshow-container {
+    position: relative;
+    width: 100vw;
     background-size: cover;
-    height: 400px;
+}
+.welcomeText{
+    position: absolute;
+    width: 100vw;
+    margin-top: 180px;
+}
+.fade {
+    transition: ease-in-out 2s;
+    /* -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s; */
+  }
+.is-active{
+    background-color: transparent;
+    text-align: right;
+    color: rgb(145, 6, 6);
+    
+   
+}
+a.navbar-item{
+    color:white;
+}
+
+.navbar-brand{
+    margin-left:80px;
+}
+a.navbar-item:hover{
+    color: rgb(145, 6, 6);
+    background-color: transparent;    
+}
+
+.navbar-menu{
+    margin-right:40px;
+
+}
+  /* ------------------- Marie  */
+.hero{
+    background-image: url(./assets/images/slide8.jpg);
+    background-size: cover;
+    height: 500px;
     margin-bottom: 20px;
     
 }
@@ -72,8 +126,7 @@ a.ourNavItem:hover {
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-    padding-bottom: 10px;
-    
+
 }
 
 
@@ -216,11 +269,9 @@ footer > div > div > p:first-child{
     padding: 0px;
 }
 
-footer > div > div > p:first-child > a{
+footer > div > div > p:first-child > a{ /*delete background color icon and radius*/
     margin-left: 10px;
     margin-right: 10px;
-    background-color: white;
-    border-radius: 25%;
     padding: 5px;
 }
 
@@ -336,11 +387,39 @@ a.button.is-info:hover{
 
 /*================= Fin Card (Jniouen wassim) =================*/
 
-/* --- opening hours color ---*/
+/*-------------------------Audrey-------------------------*/
+/*--- opening hours panel ---*/
+#current-time{
+    /*background-color: rgba(255, 255, 255, 0.356);*/
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    animation: bounce 0.75s ease infinite alternate;
+}
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-10px);}
+}
+
+.panel-hours-opened{
+    background-color: rgba(83, 128, 81, 0.71);
+}
+
+.panel-hours-closed{
+    border: 2px solid rgb(173, 92, 44);
+    background-color: rgba(255, 255, 255, 0.356);
+}
+
+/*--- opening hours color ---*/
 .opened{
-    background-color: rgba(26, 116, 23, 0.61);
+    background-color: rgba(83, 128, 81, 0.71);
 }
 
 .closed{
-    background-color: rgba(175, 86, 35, 0.61);
+    background-color: rgba(173, 92, 44, 0.61);
 }
+/*-------------------------Audrey-------------------------*/
+

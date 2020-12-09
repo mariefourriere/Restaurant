@@ -1,6 +1,7 @@
 // Jean - Cart Div //
 
-let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > button")
+let myBasketButton = document.querySelector("body > header > section > div.hero-body > div > button")
+
 let totalOrder=0;
 let main = document.querySelector('main')
 
@@ -67,99 +68,108 @@ myBasketButton.addEventListener("click", recapOrder);
 //Wassim
 const collection = [{
     title: "Poulet rôti",
-    category: ["Plat"],
-    category2: ["Meat lover"],
+    category: "Plat",
+    category2: "Meat lover",
     img: "./assets/images/plat_1.png",
     description: "Ce poulet roti est incryable. retrouvez-y du piment et du poulet.",
+    PrixString: "12",
     Prix: 12
 },
 
 {
     title: "Tiramisu",
-    category: ["Dessert"],
-    category2: ["Végétarien"],
+    category: "Dessert",
+    category2: "Végétarien",
     img: "./assets/images/plat_2.png",
     description: "Pour réchauffer les coeurs un bon Tiramisu.",
+    PrixString: "15",
     Prix: 15
 },
 
 {
     title:"Gyoza aux poireaux",
-    category: ["Plat"],
-    category2: ["Végétarien"],
+    category: "Plat",
+    category2: "Végétarien",
     img: "./assets/images/plat_3.png",
     description: "De bons poireaux c'est tout ce qu'il vous faut",
+    PrixString: "14",
     Prix: 14
 },
 
 {
     title: "Steak de légumes",
-    category: ["Plat"],
-    category2: ["Végétarien"],
+    category: "Plat",
+    category2: "Végétarien",
     img: "./assets/images/plat_4.png",
-    description: "Plat 100% maison dans un petit jardin privatif.",
-    Prix: 18
+    description: "Plat fait maison dans un petit jardin privatif.",
+    PrixString: "14",
+    Prix: 14
 },
 
 {
     title: "Moscow Mule",
-    category: ["Boisson"],
-    category2: ["Végétarien"],
+    category: "Boisson",
+    category2: "Végétarien",
     img: "./assets/images/plat_5.png",
     description: "Cocktail à base de vodka, de bière de gingembre épicée et du citron vert.",
+    PrixString: "17",
     Prix: 17
 },
 
 {
     title: "Steak frite",
-    category: ["Plat"],
-    category2: ["Meat lover"],
+    category: "Plat",
+    category2: "Meat lover",
     img: "./assets/images/plat_6.png",
     description: "De bonnes frites et de la bonne viande.",
+    PrixString: "20",
     Prix: 20
 },
 
 {
     title: "Cocktail",
-    category: ["Boisson"],
-    category2: ["Végétarien"],
+    category: "Boisson",
+    category2: "Végétarien",
     img: "./assets/images/plat_7.png",
     description: "Un cocktail rafraîchissant pour l'été pour vôtre plus grand plaisir.",
-    Prix: 9
+    PrixString: "11",
+    Prix: 11
 },
 
 {
     title: "Plat au Poisson",
-    category: ["Plat"],
-    category2: ["Meat lover"],
+    category: "Plat",
+    category2: "Meat lover",
     img: "./assets/images/plat_8.png",
     description: "Fillet de poisson accompagné de pomme de terre et de la salade.",
+    PrixString: "11",
     Prix: 11
 },
 
 {
     title: "Glace",
-    category: ["Dessert"],
-    category2: ["Végétarien"],
+    category: "Dessert",
+    category2: "Végétarien",
     img: "./assets/images/plat_9.png",
     description: "Délicieuse glace mangue framboise.",
+    PrixString: "14",
     Prix: 14
 },
 
 {
     title: "Mozzarella Tomate",
-    category: ["Plat"],
-    category2: ["Végétarien"],
+    category: "Plat",
+    category2: "Végétarien",
     img: "./assets/images/plat_10.png",
     description: "De simple mozzarella, mais accompagné de délicieuse rondelle de tomate.",
-    Prix: 16
+    PrixString: "12",
+    Prix: 12
 },
 ];
 
 /////////////////////////////   Card   ////////////////////////////////////////////////////
 const SectionColonne = document.querySelector(".menu")
 // SectionColonne.innerHTML = ""
-
 
 
 for (let element of collection) {
@@ -259,14 +269,7 @@ recapDivCartTotal.classList.remove("orderWrong");
     innerRecapDivRight.appendChild(innerRecapDivRightPrice);
     recapDivOrders.appendChild(innerRecapDiv);
 
-// const remove =() => {
-//     recapDivOrders.remove(innerRecapDiv);
-// }
-
-// innerRecapDivButton.addEventListener("click", remove)
-      }
-
-  };
+ };
 
   cardPrix.addEventListener("click", addingToCart);
 }
@@ -335,7 +338,7 @@ function filterPlat(information) {
     const results = []
 
     for (let plat of collection) {
-        if (plat.title.toLowerCase().match(information)) {
+        if (plat.title.toLowerCase().match(information) || plat.category.toLowerCase().match(information) || plat.category2.toLowerCase().match(information) || plat.description.toLowerCase().match(information) || plat.PrixString.toLowerCase().match(information)) {
             results.push(plat)
         }
     }
@@ -403,7 +406,7 @@ function filterPlat(information) {
 
       const cardPrix = document.createElement("a");
       cardPrix.className = "button";
-      cardPrix.textContent = "Ajoutez moi: " + element.Prix;
+      cardPrix.textContent = "Ajoutez moi: " + element.Prix +"€";
       cardAllText.appendChild(cardPrix);
 
       //============================== Function ADD TO CART =================================//
