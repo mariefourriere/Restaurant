@@ -51,6 +51,10 @@ margin-bottom: 18px;
     margin-top: 10px;
     
 }
+.button.is-dark{
+    position: fixed;
+    z-index: 10;
+}
 .slideshow-container {
     position: relative;
     width: 100vw;
@@ -287,7 +291,9 @@ footer > div > div > p:last-child {
     font-style: italic;
 }
 
-
+.footer-link{
+    color: rgb(145, 6, 6);
+}
 /*================== Début Card (Jniouen wassim) =================*/
 
 #centerResearch{
