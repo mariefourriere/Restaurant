@@ -1,6 +1,6 @@
 // Jean - Cart Div //
 
-let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > button")
+let myBasketButton = document.querySelector("body > header > section > div.hero-body > div > button")
 let totalOrder=0;
 let main = document.querySelector('main')
 
