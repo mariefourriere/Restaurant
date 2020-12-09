@@ -286,6 +286,9 @@ footer > div > div > p:last-child {
     padding: 0px;
     font-style: italic;
 }
+.footer-link{
+    color: rgb(145, 6, 6);
+}
 
 
 /*================== Début Card (Jniouen wassim) =================*/
@@ -422,4 +425,5 @@ a.button.is-info:hover{
     background-color: rgba(173, 92, 44, 0.61);
 }
 /*-------------------------Audrey-------------------------*/
+
 
