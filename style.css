@@ -39,18 +39,27 @@ a.ourNavItem:hover {
     color: rgb(145, 6, 6);
     
 }
-
+.mySlides{
+display: none;
+margin-bottom: 18px;
+}
 
 .cart{
     display: flex;
+    
     justify-content: flex-end;
     margin-top: 10px;
     
 }
 .slideshow-container {
-    position: absolute;
+    position: relative;
     width: 100vw;
     background-size: cover;
+}
+.welcomeText{
+    position: absolute;
+    width: 100vw;
+    margin-top: 180px;
 }
 .fade {
     transition: ease-in-out 2s;
@@ -84,9 +93,9 @@ a.navbar-item:hover{
 }
   /* ------------------- Marie  */
 .hero{
-    background-image: url(./assets/images/hero.png);
+    background-image: url(./assets/images/slide8.jpg);
     background-size: cover;
-    height: 400px;
+    height: 500px;
     margin-bottom: 20px;
     
 }
@@ -132,7 +141,7 @@ a.navbar-item:hover{
 
 /* -------------------Recap Div Jean ------------ */
 .recapDiv {
-    height: 95vh;
+    height: 90vh;
     width: 30%;
     position: fixed;
     top: 0;
