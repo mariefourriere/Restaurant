@@ -237,6 +237,7 @@ for (let element of collection) {
   //============================== Function ADD TO CART =================================//
   //function to add production to cart :
   const addingToCart = (e) => {
+    console.log("coucou")
       if (!recapDivCartTotal.innerText.match("You've ordered for ")){
           
     recapDivOrdersEmpty.textContent = "";
@@ -268,10 +269,10 @@ recapDivCartTotal.classList.remove("orderWrong");
     innerRecapDivRight.appendChild(innerRecapDivRightTitle);
     innerRecapDivRight.appendChild(innerRecapDivRightPrice);
     recapDivOrders.appendChild(innerRecapDiv);
-
+      }
  };
 
-  cardPrix.addEventListener("click", addingToCart);
+cardPrix.addEventListener("click", addingToCart);
 }
 
 const shipping =() =>{
@@ -461,3 +462,4 @@ document.querySelector('#recherche') //option recherche
         filterPlat(input.target.value.toLowerCase())
     })
 
+  
