@@ -46,7 +46,7 @@ myBasketButton.addEventListener("click", recapOrder);
 const collection = [{
     title: "Poulet rôti",
     category: ["Plat"],
-    category2: ["Non-Vegetarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_1.png",
     description: "Ce poulet roti est incryable. retrouvez-y du piment et du poulet.",
     Prix: 12
@@ -55,7 +55,7 @@ const collection = [{
 {
     title: "Tiramisu",
     category: ["Dessert"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_2.png",
     description: "Pour réchauffer les coeurs un bon Tiramisu.",
     Prix: 15
@@ -64,7 +64,7 @@ const collection = [{
 {
     title:"Gyoza aux poireaux",
     category: ["Plat"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_3.png",
     description: "De bons poireaux c'est tout ce qu'il vous faut",
     Prix: 14
@@ -73,7 +73,7 @@ const collection = [{
 {
     title: "Steak de légumes",
     category: ["Plat"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_4.png",
     description: "Plat 100% maison dans un petit jardin privatif.",
     Prix: 18
@@ -82,7 +82,7 @@ const collection = [{
 {
     title: "Moscow Mule",
     category: ["Boisson"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_5.png",
     description: "Cocktail à base de vodka, de bière de gingembre épicée et du citron vert.",
     Prix: 17
@@ -91,7 +91,7 @@ const collection = [{
 {
     title: "Steak frite",
     category: ["Plat"],
-    category2: ["Non-Vegetarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_6.png",
     description: "De bonnes frites et de la bonne viande.",
     Prix: 20
@@ -100,16 +100,16 @@ const collection = [{
 {
     title: "Cocktail",
     category: ["Boisson"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_7.png",
     description: "Un cocktail rafraîchissant pour l'été pour vôtre plus grand plaisir.",
     Prix: 9
 },
 
 {
-    title: "Poisson dréssé",
+    title: "Plat au Poisson",
     category: ["Plat"],
-    category2: ["Non-Vegetarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_8.png",
     description: "Fillet de poisson accompagné de pomme de terre et de la salade.",
     Prix: 11
@@ -118,7 +118,7 @@ const collection = [{
 {
     title: "Glace",
     category: ["Dessert"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_9.png",
     description: "Délicieuse glace mangue framboise.",
     Prix: 14
@@ -127,7 +127,7 @@ const collection = [{
 {
     title: "Mozzarella Tomate",
     category: ["Plat"],
-    category2: ["Vegetarien"],
+    category2: ["Végétarien"],
     img: "./assets/images/plat_10.png",
     description: "De simple mozzarella, mais accompagné de délicieuse rondelle de tomate.",
     Prix: 16
@@ -319,6 +319,4 @@ document.querySelector('#recherche') //option recherche
         /* sélection des valeurs(keyup) entrer dans la barre de recherche(input) */
         filterPlat(input.target.value.toLowerCase())
     })
-
-
 
