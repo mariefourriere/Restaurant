@@ -15,6 +15,7 @@ We created a basic HTML and CSS in group and then seperated tasks according to o
 
 ## To improve
  - Add more functionalities in the menu 
+ - Resize the images of the presentation page
  - Make our cart more responsive
  - Burger menu should be prettier
  - Adding the remove basket item functionality
