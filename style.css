@@ -127,6 +127,12 @@ padding-left: 10px;
  width: 100px
 }
 
+.shippingDiv{
+    height: 200px;
+    background-color: green;
+    display: none;
+}
+
 /* -------------------END Jean ------------ */
 
 /* modif css audrey */
@@ -213,4 +219,3 @@ footer > div > div > p:last-child {
 }
 
 /*================= Fin Card (Jniouen wassim) =================*/
-

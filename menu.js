@@ -5,6 +5,7 @@ let totalOrder=0;
 let main = document.querySelector('main')
 
 let clicked = true;
+
 let recapDiv = document.createElement("div");
 
 let recapDivTitle=document.createElement("h3");
@@ -19,11 +20,16 @@ recapDivOrders.appendChild(recapDivOrdersEmpty);
 let recapDivCartTotal= document.createElement("button");
 recapDivCartTotal.innerText="Order here for: "+totalOrder +"€"
 
+// const shippingDiv = document.createElement("section")
+//     shippingDiv.classList.add("shippingDiv");
+//     $(shippingDiv).insertBefore("main");
+
 recapDiv.appendChild(recapDivTitle);
 recapDiv.appendChild(recapDivOrders);
 recapDiv.appendChild(recapDivCartTotal);
 document.body.appendChild(recapDiv);
 recapDiv.classList.add("recapDiv");
+// recapDiv.classList.add("modal");
 
 const recapOrder = (e) => {
 
@@ -239,7 +245,13 @@ innerRecapDivButton.addEventListener("click", remove)
 
   };
 
+const shipping =() =>{
+    
+
+}
+
   cardPrix.addEventListener("click", addingToCart);
+  recapDivCartTotal.addEventListener("click", shipping);
 }
 /////////////////////////////  Fin Card   ////////////////////////////////////////////////////
 //////////////////////////// Option de recherche ////////////////////////////////////////////
