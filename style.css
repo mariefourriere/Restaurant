@@ -32,12 +32,57 @@ a.ourNavItem:hover {
     background-color: grey;
     
 }
-/* Marie  */
-.toggleSize{
-    background-color:none;
+/* Marie ---cart--------------------  */
+ 
+a.ourNavItem:hover {
+    background-color:transparent;
+    color: rgb(145, 6, 6);
+    
 }
 
-/* Marie  */
+
+.cart{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+}
+.slideshow-container {
+    position: absolute;
+    width: 100vw;
+    background-size: cover;
+}
+.fade {
+    transition: ease-in-out 2s;
+    /* -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s; */
+  }
+.is-active{
+    background-color: transparent;
+    text-align: right;
+    color: rgb(145, 6, 6);
+    
+   
+}
+a.navbar-item{
+    color:white;
+}
+
+.navbar-brand{
+    margin-left:80px;
+}
+a.navbar-item:hover{
+    color: rgb(145, 6, 6);
+    background-color: transparent;    
+}
+
+.navbar-menu{
+    margin-right:40px;
+
+}
+  /* ------------------- Marie  */
 .hero{
     background-image: url(./assets/images/hero.png);
     background-size: cover;
