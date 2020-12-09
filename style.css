@@ -168,7 +168,8 @@ a.navbar-item:hover{
 
 .innerRecapDiv{
 display: flex;
-margin: 10px 10px;
+padding: 10px 10px;
+border-bottom: 0.1px solid black;
 }
 
 .innerRecapDivRight{
@@ -185,7 +186,73 @@ padding-left: 10px;
  
  .innerRecapImgLeft{
  height: 100px;
- width: 100px
+ width: 100px;
+ border-radius: 5px;
+
+}
+
+.shippingDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    background-color: #D3D3D3;
+    overflow:hidden;
+    transition: ease-in-out 1.5s;
+}
+
+.shippingDiv h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.timerButton, .buttonCartTotal, .seeTimerShippingDiv, .makeANewOrder{
+    border-radius: 20px;
+    border: 0.1px solid black;
+    background-color: transparent;
+    height:35px;
+    vertical-align: center;
+    margin-bottom: 10px;
+    transition: ease-in-out 1s;
+}
+
+.timerButton:hover, .buttonCartTotal:hover, .seeTimerShippingDiv:hover, .makeANewOrder:hover{
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.orderDone{
+background-color: rgba(4, 167, 4, 0.431);
+border:1px solid green;
+}
+
+.orderDone:hover{
+background-color: rgba(4, 167, 4, 0.431);
+border:1px solid green;
+border-radius: 20px;
+}
+
+.orderWrong{
+background-color: rgba(167, 18, 4, 0.431);
+border:1px solid red;
+}
+
+.timer{
+    margin-bottom: 15px;
+}
+
+.progressWidth{
+    width:50%;
+}
+
+.progress:indeterminate {
+    -webkit-animation-duration: 5s;}
+
+.recapDivCartButtons {
+    display: flex;
+    flex-direction: column;
 }
 
 /* -------------------END Jean ------------ */
@@ -355,3 +422,4 @@ a.button.is-info:hover{
     background-color: rgba(173, 92, 44, 0.61);
 }
 /*-------------------------Audrey-------------------------*/
+

@@ -1,10 +1,12 @@
 // Jean - Cart Div //
 
 let myBasketButton = document.querySelector("body > header > section > div.hero-body > div > button")
+
 let totalOrder=0;
 let main = document.querySelector('main')
 
 let clicked = true;
+
 let recapDiv = document.createElement("div");
 
 let recapDivTitle=document.createElement("h3");
@@ -16,14 +18,35 @@ let recapDivOrdersEmpty = document.createElement("p");
 recapDivOrdersEmpty.textContent = "Your Cart is currently empty !";
 recapDivOrders.appendChild(recapDivOrdersEmpty);
 
+let recapDivCartButtons=document.createElement("div");
+recapDivCartButtons.classList.add("recapDivCartButtons");
+
 let recapDivCartTotal= document.createElement("button");
-recapDivCartTotal.innerText="Order here for: "+totalOrder +"€"
+recapDivCartTotal.innerText ="Your cart is empty !";
+recapDivCartTotal.classList.add('buttonCartTotal')
+
+let seeTimerShippingDiv= document.createElement("button");
+seeTimerShippingDiv.innerText = "See timer";
+seeTimerShippingDiv.classList.add("seeTimerShippingDiv");
+
+let makeANewOrder = document.createElement("button");
+makeANewOrder.innerText = "Make a new order";
+makeANewOrder.classList.add("makeANewOrder");
+
+let timerButton = document.querySelector('.timerButton')
+
+// const shippingDiv = document.createElement("section")
+//     shippingDiv.classList.add("shippingDiv");
+//     $(shippingDiv).insertBefore("main");
+
 
 recapDiv.appendChild(recapDivTitle);
 recapDiv.appendChild(recapDivOrders);
-recapDiv.appendChild(recapDivCartTotal);
+recapDiv.appendChild(recapDivCartButtons);
+recapDivCartButtons.appendChild(recapDivCartTotal);
 document.body.appendChild(recapDiv);
 recapDiv.classList.add("recapDiv");
+// recapDiv.classList.add("modal");
 
 const recapOrder = (e) => {
 
@@ -214,10 +237,14 @@ for (let element of collection) {
   //============================== Function ADD TO CART =================================//
   //function to add production to cart :
   const addingToCart = (e) => {
+      if (!recapDivCartTotal.innerText.match("You've ordered for ")){
+          
     recapDivOrdersEmpty.textContent = "";
     const innerRecapDiv = document.createElement("div");
     const innerRecapImgLeft = document.createElement("img");
     const innerRecapDivRight = document.createElement("div");
+    // const innerRecapDivButton = document.createElement("button");
+    // innerRecapDivButton.textContent="X";
     const innerRecapDivRightTitle = document.createElement("h3");
     const innerRecapDivRightPrice = document.createElement("p");
 
@@ -231,16 +258,79 @@ for (let element of collection) {
     innerRecapDivRightPrice.textContent = element.Prix +"€";
     totalOrder +=  element.Prix
     recapDivCartTotal.innerText = "Order here for: " + totalOrder +"€";
+
+     recapDivCartTotal.classList.remove("orderDone");
+recapDivCartTotal.classList.remove("orderWrong");
+
     innerRecapDiv.appendChild(innerRecapImgLeft);
     innerRecapDiv.appendChild(innerRecapDivRight);
+    // innerRecapDiv.appendChild(innerRecapDivButton);
     innerRecapDivRight.appendChild(innerRecapDivRightTitle);
     innerRecapDivRight.appendChild(innerRecapDivRightPrice);
     recapDivOrders.appendChild(innerRecapDiv);
 
-  };
+ };
 
   cardPrix.addEventListener("click", addingToCart);
 }
+
+const shipping =() =>{
+    if(totalOrder!=0){
+    document.querySelector(".shippingDiv").style.height = "400px";
+    const timerDiv =document.createElement('div') 
+    recapDivCartTotal.innerText = "You've ordered for " + totalOrder + "€ !";
+    recapDivCartTotal.classList.add("orderDone");
+recapDivCartTotal.classList.remove("orderWrong");
+recapDivCartTotal.disabled=true;
+recapDivCartButtons.appendChild(seeTimerShippingDiv);
+recapDivCartButtons.appendChild(makeANewOrder);
+ window.location.href = "#timer";}
+    else {
+         recapDivCartTotal.innerText =
+           "Your cart is empty !";
+         recapDivCartTotal.classList.add("orderWrong");
+    }
+}
+
+const closeTimer =()=>{
+    document.querySelector(".shippingDiv").style.height = "0px";
+}
+let secs = 1800;
+const countDown= () =>{
+  
+  let element = document.querySelector(".timer");
+
+  setInterval(function () {
+    let mins = Math.floor(secs / 60);
+    let displaySec = secs-(mins*60);
+    element.innerHTML =
+      mins + " minutes and " + displaySec + " seconds";
+    if (secs < 1) {
+      element.innerHTML = "<h2>Your order has arrived</h2>";
+    }
+    secs--;
+  }, 1000);
+}
+
+const NewOrder = () => {
+  totalOrder = 0;
+  secs=1800;
+  document.querySelector(".shippingDiv").style.height = "0px";
+  recapDivOrders.innerHTML = "";
+  recapDivOrdersEmpty.textContent = "Your Cart is currently empty !";
+  recapDivOrders.appendChild(recapDivOrdersEmpty);
+  recapDivCartTotal.innerText = "Your cart is empty !";
+  recapDivCartTotal.classList.remove("orderDone");
+  recapDivCartTotal.disabled = false;
+  recapDivCartButtons.removeChild(seeTimerShippingDiv);
+  recapDivCartButtons.removeChild(makeANewOrder);
+};
+
+recapDivCartTotal.addEventListener("click", shipping);
+timerButton.addEventListener("click", closeTimer);
+countDown();
+seeTimerShippingDiv.addEventListener("click", shipping);
+makeANewOrder.addEventListener("click", NewOrder);
 /////////////////////////////  Fin Card   ////////////////////////////////////////////////////
 //////////////////////////// Option de recherche ////////////////////////////////////////////
 
@@ -318,6 +408,50 @@ function filterPlat(information) {
       cardPrix.className = "button";
       cardPrix.textContent = "Ajoutez moi: " + element.Prix +"€";
       cardAllText.appendChild(cardPrix);
+
+      //============================== Function ADD TO CART =================================//
+      //function to add production to cart :
+      const addingToCart = (e) => {
+        if (!recapDivCartTotal.innerText.match("You've ordered for ")) {
+          recapDivOrdersEmpty.textContent = "";
+          const innerRecapDiv = document.createElement("div");
+          const innerRecapImgLeft = document.createElement("img");
+          const innerRecapDivRight = document.createElement("div");
+          // const innerRecapDivButton = document.createElement("button");
+          // innerRecapDivButton.textContent="X";
+          const innerRecapDivRightTitle = document.createElement("h3");
+          const innerRecapDivRightPrice = document.createElement("p");
+
+          innerRecapDivRightTitle.classList.add("innerRecapDivRightTitle");
+          innerRecapDiv.classList.add("innerRecapDiv");
+          innerRecapDivRight.classList.add("innerRecapDivRight");
+          innerRecapImgLeft.classList.add("innerRecapImgLeft");
+
+          innerRecapImgLeft.src = element.img;
+          innerRecapDivRightTitle.textContent = element.title;
+          innerRecapDivRightPrice.textContent = element.Prix + "€";
+          totalOrder += element.Prix;
+          recapDivCartTotal.innerText = "Order here for: " + totalOrder + "€";
+
+          recapDivCartTotal.classList.remove("orderDone");
+          recapDivCartTotal.classList.remove("orderWrong");
+
+          innerRecapDiv.appendChild(innerRecapImgLeft);
+          innerRecapDiv.appendChild(innerRecapDivRight);
+          // innerRecapDiv.appendChild(innerRecapDivButton);
+          innerRecapDivRight.appendChild(innerRecapDivRightTitle);
+          innerRecapDivRight.appendChild(innerRecapDivRightPrice);
+          recapDivOrders.appendChild(innerRecapDiv);
+
+          // const remove =() => {
+          //     recapDivOrders.remove(innerRecapDiv);
+          // }
+
+          // innerRecapDivButton.addEventListener("click", remove)
+        }
+      };
+
+      cardPrix.addEventListener("click", addingToCart);
     }
 }
 
