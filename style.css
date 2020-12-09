@@ -218,11 +218,22 @@ footer > div > div > p:last-child {
 
 /*================= Fin Card (Jniouen wassim) =================*/
 
-/* --- opening hours color ---*/
+/*--- opening hours panel ---*/
+#current-time{
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 1px solid rgb(145, 6, 6);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+/*--- opening hours color ---*/
 .opened{
-    background-color: rgba(26, 116, 23, 0.61);
+    background-color: rgba(83, 128, 81, 0.71);
 }
 
 .closed{
-    background-color: rgba(175, 86, 35, 0.61);
+    background-color: rgba(173, 92, 44, 0.61);
 }

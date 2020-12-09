@@ -17,7 +17,7 @@ if(nowDay > 1 && nowDay <= 6){
         openings.textContent = `We're opened.`
     }
     else{
-        openings.textContent = `We're closed.`
+        openings.textContent = "We're closed.\nPlease come back later."
     }
 }
 else if(nowDay == 7){
@@ -25,11 +25,11 @@ else if(nowDay == 7){
         openings.textContent = `We're opened.`
     }
     else{
-        openings.textContent = `We're closed.`
+        openings.textContent = "We're closed.\nPlease come back later."
     }
 }
 else{
-    openings.textContent = `We're closed.`
+    openings.textContent = "We're closed.\nPlease come back later."
 }
 
 // DISPLAY OPEN/CLOSE IN SCHEDULE
