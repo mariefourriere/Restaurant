@@ -72,8 +72,7 @@ a.ourNavItem:hover {
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-    padding-bottom: 10px;
-    
+
 }
 
 
@@ -269,16 +268,31 @@ a.button.is-info:hover{
 
 /*================= Fin Card (Jniouen wassim) =================*/
 
+/*------------------Audrey------------------*/
 /*--- opening hours panel ---*/
 #current-time{
-    background-color: rgba(255, 255, 255, 0.356);
-    border: 1px solid rgb(145, 6, 6);
-    border-radius: 20px;
-    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.356);*/
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
     font-size: 30px;
     font-weight: 900;
+    color: black;
+    animation: bounce 0.75s ease infinite alternate;
+}
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-10px);}
 }
 
+.panel-hours-opened{
+    background-color: rgba(83, 128, 81, 0.71);
+}
+
+.panel-hours-closed{
+    border: 2px solid rgb(173, 92, 44);
+    background-color: rgba(255, 255, 255, 0.356);
+}
 
 /*--- opening hours color ---*/
 .opened{
@@ -288,3 +302,4 @@ a.button.is-info:hover{
 .closed{
     background-color: rgba(173, 92, 44, 0.61);
 }
+/*------------------Audrey------------------*/

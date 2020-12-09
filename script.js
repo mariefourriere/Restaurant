@@ -11,25 +11,37 @@ let schedule = [11.30, 14.00, 18.00, 22.30];
 
 let openings = document.createElement('p');
 currentTime.appendChild(openings);
+let textOC = document.createElement('p');
+currentTime.appendChild(textOC);
 
 if(nowDay > 1 && nowDay <= 6){
     if(nowTime > schedule[0] && nowTime < schedule[1] || nowTime > schedule[2] && nowTime < schedule[3]){
-        openings.textContent = `We're opened.`
+        openings.textContent = "We're opened.";
+        textOC.textContent = "Bon appétit.";
+        currentTime.className= 'panel-hours-opened';
     }
     else{
-        openings.textContent = "We're closed.\nPlease come back later."
+        openings.textContent = "We're closed.";
+        textOC.textContent = "Please come back later.";
+        currentTime.className= 'panel-hours-closed';
     }
 }
 else if(nowDay == 7){
     if(nowTime > schedule[0] && nowTime < schedule[1]){
-        openings.textContent = `We're opened.`
+        openings.textContent = "We're opened.";
+        textOC.textContent = "Bon appétit.";
+        currentTime.className= 'panel-hours-opened';
     }
     else{
-        openings.textContent = "We're closed.\nPlease come back later."
+        openings.textContent = "We're closed.";
+        textOC.textContent = "Please come back later.";
+        currentTime.className= 'panel-hours-closed';
     }
 }
 else{
-    openings.textContent = "We're closed.\nPlease come back later."
+    openings.textContent = "We're closed.";
+    textOC.textContent = "Please come back later.";
+    currentTime.className= 'panel-hours-closed';
 }
 
 // DISPLAY OPEN/CLOSE IN SCHEDULE
@@ -77,7 +89,7 @@ let thArr = [];
 
 for(let elem of thTable){
     if(elem.innerText == nowDayLetters){
-        if(openings.textContent == `We're opened.`)
+        if(openings.textContent == "We're opened.")
         {
             thArr.push(elem.innerText);
             elem.parentElement.className = 'opened';
