@@ -147,13 +147,33 @@ footer > div > div > p:last-child {
     justify-content: center;
     color: red;
 }
+.barreSelect{
+    display: flex;
+    justify-content: center;
+}
 
+.Select{
+    
+    background-color: royalblue;
+}
 
 .tag.is-danger {
     margin-left: 10px;
     margin-bottom: 5px;
 }
+.tag:not(body).is-success{
+    background-color:transparent;
+    color:#3d8354;
+    font-weight:bold;
+    border: 0.1px solid #3d8354;
+}
 
+.tag:not(body).is-danger{
+    background-color: transparent;
+    color: #3f1f1f;
+    font-weight:bold;
+    border: 0.1px solid #3f1f1f;
+}
 .content h2 {
     color: #0c0b0b;
 }
@@ -183,12 +203,13 @@ footer > div > div > p:last-child {
 }
 
 input.input{
-border: 0.2px solid rgb(145, 6, 6);
+border: 0.2px solid #363636;
+
 }
 
 a.button.is-info{
-    border: 0.2px solid rgb(145, 6, 6);
-    background-color:  #D3D3D3;
+    border: 0.2px solid #363636;
+    background-color:  transparent;
     color:black;
     font-weight: bold;
 
@@ -198,8 +219,10 @@ a.button.is-info:hover{
     color:black
 }
 .button {
-    border: 0.1px solid #D3D3D3;
+    background-color:transparent;
+    border: 0.px solid black;
     color: black;
+    font-weight: 550;
     
 }
 

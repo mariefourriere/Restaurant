@@ -3,7 +3,7 @@ console.log("coucou")
 const collection = [{
     title: "Poulet rôti",
     category: ["Plat"],
-    category2: ["Non-Végétarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_1.png",
     description: "Ce poulet roti est incryable. retrouvez-y du piment et du poulet.",
     Prix: "Ajoutez moi: 12€"
@@ -48,7 +48,7 @@ const collection = [{
 {
     title: "Steak frite",
     category: ["Plat"],
-    category2: ["Non-Végétarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_6.png",
     description: "De bonnes frites et de la bonne viande.",
     Prix: "Ajoutez moi: 20€"
@@ -66,7 +66,7 @@ const collection = [{
 {
     title: "Plat au Poisson",
     category: ["Plat"],
-    category2: ["Non-Végétarien"],
+    category2: ["Meat lover"],
     img: "./assets/images/plat_8.png",
     description: "Fillet de poisson accompagné de pomme de terre et de la salade.",
     Prix: "Ajoutez moi: 11€"
@@ -248,6 +248,7 @@ document.querySelector('#recherche') //option recherche
         filterPlat(input.target.value.toLowerCase())
     })
 
+    
 // Jean //
 
 let myBasketButton = document.querySelector("body > header > nav > div.navbar-menu > div:nth-child(3) > div > div > button")
