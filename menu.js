@@ -270,7 +270,7 @@ recapDivCartTotal.classList.remove("orderWrong");
     recapDivOrders.appendChild(innerRecapDiv);
 
  };
-
+  }
   cardPrix.addEventListener("click", addingToCart);
 }
 
