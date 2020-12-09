@@ -2,7 +2,6 @@
 Find our restaurant website [here](...)
 
 ## The "Trois-Quart" Team : 
-
 * Jean Fabry
 * Marie Fourriere
 * Audrey Gilmant
@@ -12,7 +11,6 @@ Find our restaurant website [here](...)
 Create a website for a restaurant with a delivery system
 
 ## How did we do it?
-
 We created a basic HTML and CSS in group and then seperated tasks according to our strength. 
 
 ## To improve
