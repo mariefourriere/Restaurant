@@ -96,12 +96,19 @@ a.navbar-item:hover{
 
 }
   /* ------------------- Marie  */
-.hero{
-    background-image: url(./assets/images/slide8.jpg);
+.heroIndex{
+    background-image: url(./assets/images/slide2.JPG);
     background-size: cover;
-    height: 500px;
+    
     margin-bottom: 20px;
     
+}
+
+.heroMenu{
+    background-image: url(./assets/images/slide1.JPG);
+    background-size: cover;
+    height:  500px;
+    margin-bottom: 20px;
 }
 .heroTitle{
     color: white;
@@ -110,7 +117,8 @@ a.navbar-item:hover{
     color: rgb(145, 6, 6);
     text-align: center;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
+    
 }
 .about{
     background-color: lightgrey;
