@@ -1,8 +1,7 @@
 # **Restaurant "Au Trois-Quart"**
-Find our restaurant website [here](...)
+Find our restaurant website [here](https://jeanfabry.github.io/Restaurant/)
 
 ## The "Trois-Quart" Team : 
-
 * Jean Fabry
 * Marie Fourriere
 * Audrey Gilmant
@@ -12,11 +11,11 @@ Find our restaurant website [here](...)
 Create a website for a restaurant with a delivery system
 
 ## How did we do it?
-
 We created a basic HTML and CSS in group and then seperated tasks according to our strength. 
 
 ## To improve
  - Add more functionalities in the menu 
+ - Resize the images of the presentation page
  - Make our cart more responsive
  - Burger menu should be prettier
  - Adding the remove basket item functionality
